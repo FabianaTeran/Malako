@@ -1,0 +1,24 @@
+.homepage{
+    margin-top: 7rem;
+}
+.hero{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    &__img--bg,
+    &__img--img{
+        width: 25rem;
+    }
+    &__img--bg{
+        background: rgb(255, 214, 165);
+        border-radius: 50%;
+        height: 25rem;
+    }
+    &__img--img{
+        position: absolute;
+    }
+}
+// }
+// font-size: clamp(1rem, 3.5vw, 2.75rem);
