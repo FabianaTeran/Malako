@@ -38,11 +38,6 @@ main {
   font-weight: bolder;
 }
 
-.logo span {
-  color: #3bd19d !important;
-  font-family: "Frank Ruhl Libre", serif;
-}
-
 header {
   height: 70px;
   display: -webkit-box;
