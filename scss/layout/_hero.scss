@@ -1,24 +1,35 @@
 .homepage{
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
+
 .hero{
     &__container{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+
 
     }
-    &__img--bg,
-    &__img--img{
-        width: 25rem;
+    &__content{
+        border: 1px solid blue;
+        padding: 1em;
+        .hero__title{
+            font-family: $hero-font;
+            font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+            border: 1px solid pink;
+        }
+        .hero__subtitle{
+            font-family: $hero-subtitle;
+            border: 1px solid red;
+        }
+
+        
     }
     &__img--bg{
-        background: rgb(255, 214, 165);
-        border-radius: 50%;
-        height: 25rem;
-    }
-    &__img--img{
+        background: rgb(0, 0, 0);
+        height: 17rem;
+        width: 10rem;
         position: absolute;
+        z-index:-1;
+
     }
 }
-// }
-// font-size: clamp(1rem, 3.5vw, 2.75rem);
