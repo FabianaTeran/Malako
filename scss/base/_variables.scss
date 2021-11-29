@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Courgette&family=Lobster&display=swap');
-$clr-dark: black;
+// COLORES
+$clr-dark: black !default;
 $clr-light: white;
 $clr-item:rgb(85, 84, 84);
-$clr-title: rgb(59, 209, 157) !default;
+$clr-title: rgb(59, 209, 157);
 $clr-green: rgb(115, 191, 152);
+$clr-btn-pink: rgb(255, 192, 245);
+$clr-shadow:rgb(189, 189, 189);
+// TIPOGRAFIA
 $typo-logo: 'Frank Ruhl Libre', serif;
 $typo-bg:'Roboto', sans-serif;
-
-
 $body-font: 'Poppins', sans-serif;
 $hero-title: 'Bebas Neue';
-$hero-subtitle: 'Carter One', cursive;
+$hero-subtitle: 'Courgette', cursive;
+
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Carter One', cursive;
 // font-family: 'Courgette', cursive;

@@ -1,33 +1,53 @@
 .homepage{
     margin-top: 5rem;
 }
-
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border: 2px solid $clr-btn-pink;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $clr-dark;
+    box-shadow: 5px 5px $clr-dark;
+    font-size: clamp(.5em, 3vw, 1rem);
+}
+.btn:hover{
+    background: $clr-btn-pink;
+    box-shadow: 5px 5px $clr-shadow; 
+}
 .hero{
     &__container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-
+    
 
     }
+    &__img{
+        position: relative;
+    }
     &__content{
-        border: 1px solid blue;
         padding: 1em;
-        .hero__title{
-            font-family: $hero-font;
+        &--title{
+            font-family: $hero-title;
             font-size: clamp(1.5rem, 3.5vw, 2.75rem);
-            border: 1px solid pink;
         }
-        .hero__subtitle{
+        &--subtitle{
             font-family: $hero-subtitle;
-            border: 1px solid red;
-        }
 
+        }
+    }
+    &__img--img{
+        filter: drop-shadow(0 3px 3px rgb(195, 190, 190));
         
     }
     &__img--bg{
-        background: rgb(0, 0, 0);
-        height: 17rem;
-        width: 10rem;
+        background: $clr-dark;
+        height: 100%;
+        width: 50%;
+        left:0;
         position: absolute;
         z-index:-1;
 
