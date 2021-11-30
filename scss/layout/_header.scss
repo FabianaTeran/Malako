@@ -4,12 +4,11 @@
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: bolder;
-    span{
-        color: $clr-title !important;
-        font-family: $typo-logo;
-    }
 }
-
+.abajo{
+    background: $clr-light;
+    color:$clr-dark !important;
+}
 header{
     height: 65px;
     justify-content: space-between;
@@ -17,7 +16,8 @@ header{
     position: fixed;
     z-index: 1;
     top:0; left: 0; right: 0;
-    background: $clr-light;
+    background: $clr-dark;
+    color: $clr-light !important;
     border-bottom: 1px solid $clr-shadow;
 
     .nav_btn{
@@ -48,6 +48,7 @@ header{
             margin-top: 25vh;
             margin-left: 5em;
             li{
+                font-family: Helvetica;
                 font-size: 1em;
                 opacity: 0.8;
                 letter-spacing: 0.05em;

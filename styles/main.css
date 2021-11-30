@@ -38,9 +38,9 @@ main {
   font-weight: bolder;
 }
 
-.logo span {
-  color: #3bd19d !important;
-  font-family: "Frank Ruhl Libre", serif;
+.abajo {
+  background: white;
+  color: black !important;
 }
 
 header {
@@ -54,7 +54,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: white;
+  background: black;
+  color: white !important;
   border-bottom: 1px solid #bdbdbd;
 }
 
@@ -96,6 +97,7 @@ header nav .menu {
 }
 
 header nav .menu li {
+  font-family: Helvetica;
   font-size: 1em;
   opacity: 0.8;
   letter-spacing: 0.05em;
@@ -127,7 +129,7 @@ header nav .menu li.active {
 }
 
 .homepage {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .flex {
