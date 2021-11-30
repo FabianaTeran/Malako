@@ -1,13 +1,13 @@
 .homepage{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .flex{
     display: flex;
-    justify-content: center;
     align-items: center;
+    
 }
 .btn{
-    border: 2px solid $clr-btn-pink;
+    border: 2px solid $clr-pink;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $clr-dark;
@@ -15,7 +15,7 @@
     font-size: clamp(.5em, 3vw, 1rem);
 }
 .btn:hover{
-    background: $clr-btn-pink;
+    background: $clr-pink;
     box-shadow: 5px 5px $clr-shadow; 
 }
 .hero{
@@ -39,10 +39,10 @@
 
         }
     }
-    &__img--img{
-        filter: drop-shadow(0 3px 3px rgb(195, 190, 190));
+    // &__img--img{
+    //     filter: drop-shadow(0 3px 3px rgb(195, 190, 190));
         
-    }
+    // }
     &__img--bg{
         background: $clr-dark;
         height: 100%;
