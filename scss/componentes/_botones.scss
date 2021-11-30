@@ -1,0 +1,12 @@
+.btn{
+    border: 2px solid $clr-pink;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $clr-dark;
+    box-shadow: 5px 5px $clr-dark;
+    font-size: clamp(.5em, 3vw, 1rem);
+}
+.btn:hover{
+    background: $clr-pink;
+    box-shadow: 5px 5px $clr-shadow; 
+}

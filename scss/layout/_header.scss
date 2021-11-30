@@ -1,20 +1,24 @@
 .logo{
     font-family: $typo-logo;
-    letter-spacing: .3em;
+    letter-spacing: .3rem;
     text-transform: uppercase;
-    font-size: clamp(1.2em, 3vw, 1rem);
+    font-size: 1.5em;
     font-weight: bolder;
+    span{
+        color: $clr-title !important;
+        font-family: $typo-logo;
+    }
 }
 
 header{
+    height: 65px;
     justify-content: space-between;
-    height: 3em;
     padding: 1em;
     position: fixed;
     z-index: 1;
     top:0; left: 0; right: 0;
     background: $clr-light;
-    border-bottom: 1.5px solid $clr-shadow;
+    border-bottom: 1px solid $clr-shadow;
 
     .nav_btn{
         width: 2em;
@@ -38,26 +42,23 @@ header{
             display: block;
         }
         .menu{
-            flex-direction: row;
+            display: flex;
+            flex-flow: column;
             gap: 2em;
-            margin-top: 15vh;
-            margin-right: 2rem;
+            margin-top: 25vh;
+            margin-left: 5em;
             li{
-                font-size: clamp(.9em, 3vw, 1rem);
+                font-size: 1em;
                 opacity: 0.8;
                 letter-spacing: 0.05em;
-                position: relative;
                 &.active{
                     font-weight: 600;
                     opacity: 1;
                 }
             }
-            li:hover a{
-                color: $clr-pink !important;
-            }
         }
     }
-}
+
 
     @media(min-width: 750px){
         .nav_btn{
@@ -74,3 +75,4 @@ header{
             }
         }
     }
+}
