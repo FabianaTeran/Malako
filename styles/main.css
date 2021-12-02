@@ -30,6 +30,15 @@ main {
   margin-top: 5rem;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   font-family: "Frank Ruhl Libre", serif;
   letter-spacing: .3rem;
@@ -39,6 +48,11 @@ main {
 }
 
 .abajo {
+  background: white;
+  color: black !important;
+}
+
+.abajo nav {
   background: white;
   color: black !important;
 }
@@ -56,11 +70,11 @@ header {
   right: 0;
   background: black;
   color: white !important;
-  border-bottom: 1px solid #bdbdbd;
 }
 
 header .nav_btn {
   width: 2em;
+  cursor: pointer;
 }
 
 header .nav_btn-close {
@@ -74,7 +88,8 @@ header nav {
   right: 0;
   height: 100vh;
   width: 60%;
-  background: white;
+  background: black;
+  color: white !important;
   z-index: 1;
   display: none;
 }
@@ -92,12 +107,11 @@ header nav .menu {
       -ms-flex-flow: column;
           flex-flow: column;
   gap: 2em;
-  margin-top: 25vh;
-  margin-left: 5em;
+  margin-top: 50%;
+  margin-left: 15%;
 }
 
 header nav .menu li {
-  font-family: Helvetica;
   font-size: 1em;
   opacity: 0.8;
   letter-spacing: 0.05em;
@@ -108,7 +122,22 @@ header nav .menu li.active {
   opacity: 1;
 }
 
-@media (min-width: 750px) {
+header nav .menu li:hover a {
+  color: #ffc0f5 !important;
+  border: 1px solid #ffc0f5;
+  padding: .3em;
+  border-radius: 10px;
+}
+
+header .icons .icon {
+  font-size: 1.5em;
+}
+
+header .icons .icon:hover {
+  color: #ffc0f5 !important;
+}
+
+@media (min-width: 900px) {
   header .nav_btn {
     display: none;
   }
@@ -124,21 +153,12 @@ header nav .menu li.active {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     margin: unset;
-    gap: 2em;
+    gap: 3em;
   }
 }
 
 .homepage {
-  margin-top: 7rem;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 5rem;
 }
 
 .hero__container {
@@ -165,7 +185,7 @@ header nav .menu li.active {
 
 .hero__content--title {
   font-family: "Bebas Neue";
-  font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .hero__content--subtitle {
@@ -177,12 +197,15 @@ header nav .menu li.active {
   background: black;
   height: 100%;
   width: 50%;
-  left: 0;
+  right: 0;
   position: absolute;
   z-index: -1;
 }
 
 @media (min-width: 750px) {
+  .homepage {
+    margin-top: 10rem;
+  }
   .hero__container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -313,12 +336,6 @@ header nav .menu li.active {
 }
 
 .blogs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -452,69 +469,70 @@ form {
 }
 
 .catalogo-container {
-  padding: 2rem;
-  background: #73bf98;
-  margin: 2rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .catalogo-container .catalogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .catalogo-container .catalogo__productos {
   position: relative;
-  width: 50%;
+  overflow: hidden;
+  width: 80%;
 }
 
 .catalogo-container .catalogo__productos--content {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
   display: -ms-grid;
   display: grid;
-  place-content: center;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 90%;
+  bottom: -25rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 2rem;
 }
 
 .catalogo-container .catalogo__productos--title {
-  background: rgba(0, 0, 0, 0.366);
-  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  background: rgba(0, 0, 0, 0.537);
+  font-size: clamp(1rem, 1.5vw, 1rem);
   font-weight: 700;
   text-align: center;
-  line-height: 0.9;
+  line-height: 1.2;
   color: white !important;
   letter-spacing: .075em;
-  padding: .5rem;
+  font-family: Helvetica;
+  padding: 1rem;
   text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.catalogo-container .catalogo__productos:hover .catalogo__productos--content {
+  bottom: 0;
 }
 
 .catalogo-container .catalogo__productos--content h3:hover {
-  color: white !important;
-  background: #73bf98;
+  color: #bdbdbd !important;
 }
 
-@media (max-width: 750px) {
+@media (min-width: 750px) {
   .catalogo-container .catalogo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -528,9 +546,7 @@ form {
 
 .carousel {
   position: relative;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 5rem;
+  margin: 7rem 2rem 0 2rem;
 }
 
 .carousel__boton {
@@ -538,11 +554,11 @@ form {
   width: 30px;
   height: 30px;
   border: none;
-  top: calc(50% - 35px);
+  top: calc(50% - 20px);
   cursor: pointer;
-  line-height: 30px;
   background: none;
-  opacity: 20%;
+  opacity: 50%;
+  border: 1px solif blue;
 }
 
 .carousel__boton:hover {
@@ -559,10 +575,11 @@ form {
 
 .carousel__lista {
   overflow: hidden;
+  margin-left: 2rem;
 }
 
 .carousel__elemento svg {
-  width: 6rem;
+  width: 5rem;
   margin-bottom: 1rem;
 }
 

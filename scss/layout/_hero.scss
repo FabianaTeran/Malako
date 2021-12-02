@@ -1,10 +1,5 @@
 .homepage{
-    margin-top: 7rem;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    
+    margin-top: 5rem;
 }
 .hero{
     &__container{
@@ -20,12 +15,11 @@
         justify-content: center;
         &--title{
             font-family: $hero-title;
-            font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+            font-size: clamp(2rem, 4vw, 4rem);
         }
         &--subtitle{
             font-family: $hero-subtitle;
             font-size: clamp(1rem, 3.5vw, 1.5rem);
-
         }
     }
 
@@ -33,7 +27,7 @@
         background: $clr-dark;
         height: 100%;
         width: 50%;
-        left:0;
+        right: 0;
         position: absolute;
         z-index:-1;
 
@@ -42,6 +36,9 @@
 
 
 @media(min-width: 750px){
+    .homepage{
+        margin-top: 10rem;
+    }
     .hero{
         &__container{
             grid-template-columns: repeat(2,1fr);

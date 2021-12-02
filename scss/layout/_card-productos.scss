@@ -63,6 +63,9 @@
         }
         &:hover .card__img{
             transform: rotate(30deg);
+            // transform: scale(20);
+            // aganda la vista previa de la imagen
+            // transform: translate(20px, 50px);
             margin-left: 3.5rem;
         }
         &:hover .card__precios{

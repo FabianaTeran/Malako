@@ -7,7 +7,11 @@
 }
 .abajo{
     background: $clr-light;
-    color:$clr-dark !important;
+    color: $clr-dark !important;
+    nav{
+        background: $clr-light;
+        color: $clr-dark !important;
+    }
 }
 header{
     height: 65px;
@@ -18,10 +22,10 @@ header{
     top:0; left: 0; right: 0;
     background: $clr-dark;
     color: $clr-light !important;
-    border-bottom: 1px solid $clr-shadow;
 
     .nav_btn{
         width: 2em;
+        cursor: pointer;
         &-close{
             float: right;
             margin: 1em;
@@ -35,7 +39,8 @@ header{
         right: 0;
         height: 100vh;
         width: 60%;
-        background: $clr-light;
+        background: $clr-dark;
+        color: $clr-light !important;
         z-index: 1;
         display: none;
         &.nav-open{
@@ -45,10 +50,9 @@ header{
             display: flex;
             flex-flow: column;
             gap: 2em;
-            margin-top: 25vh;
-            margin-left: 5em;
+            margin-top: 50%;
+            margin-left: 15%;
             li{
-                font-family: Helvetica;
                 font-size: 1em;
                 opacity: 0.8;
                 letter-spacing: 0.05em;
@@ -57,11 +61,24 @@ header{
                     opacity: 1;
                 }
             }
+            li:hover a{
+                color: $clr-pink !important;
+                border: 1px solid $clr-pink;
+                padding: .3em;
+                border-radius: 10px;
+            }
+        }
+    }
+    .icons{
+        .icon{
+            font-size: 1.5em;
+        }
+        .icon:hover{
+            color: $clr-pink!important;
         }
     }
 
-
-    @media(min-width: 750px){
+    @media(min-width: 900px){
         .nav_btn{
             display: none;
         }
@@ -72,7 +89,7 @@ header{
                 display: flex;
                 flex-flow: row nowrap;
                 margin: unset;
-                gap: 2em;
+                gap: 3em;
             }
         }
     }
