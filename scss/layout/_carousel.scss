@@ -1,22 +1,22 @@
-.svg-icon{
-    fill:$clr-item;
+.titulo-principal{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
 }
-.margin-icon{
-    margin-top:2rem;
-}
+
 .carousel{
     position: relative;
-    margin: 7rem 2rem 0 2rem;
+    margin: 5rem 2rem 0 2rem;
     &__boton{ 
         position: absolute;
         width: 30px;
         height: 30px;
         border: none;
+        font-size: 3rem;
         top: calc(50% - 20px);
         cursor: pointer;
         background: none;
         opacity: 50%;
-        border: 1px solif blue;
     }
     &__boton:hover{
         opacity: 100%;
@@ -30,15 +30,27 @@
     &__lista{
         overflow: hidden;
         margin-left: 2rem;
+        margin-right: 2rem;
     }
     &__elemento{
-        svg{
-            width: 5rem;
+        img{
+            width: 60%;
             margin-bottom: 1rem;
         }
         a{
             flex-direction: column;
         }
+        h3{
+            font-size: clamp(1.5em, 2vh, 2em);
+        }
     }
+
+    @media(min-width:750px){
+        .carousel__elemento{
+            img{
+                width: 50%;
+            }
+        }
 }
 
+}

@@ -13,12 +13,12 @@ video,
 svg{
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    background-size: cover;
 }
 
 body{
     font-family: $body-font !important;
-    background: rgb(255, 255, 255);
+    background: #faf9f8;
 }
 main{
     margin-top: 5rem;
@@ -28,3 +28,10 @@ main{
     align-items: center;
     
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
