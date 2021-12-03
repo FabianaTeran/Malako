@@ -2,38 +2,37 @@
 <html lang="en">
 <head>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SSOFIA</title>
+    <meta name="description" content="Todos nuestros productos son cuidadosamente elegidos y desarrollados para que tu piel este radiante">
+    <meta name="keywords" content="Cuidado facil, Cuidado Corporal, Limpieza, Hidratación, Rutina Diaria, Ventas online, skincare, Exfoliantes, Mascarillas, Mascarillas de Arcilla, Testeado Dermatologicamente, Original, Productos para Hombres y Mujeres" >
+    <title>Portsaid</title>
 </head>
 <body>
-        <header class="header">
-            <a class= "logo" href="../index.html">ssofia</a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Productos</a>
-                        <ul class="submenu">
-                            <li><a href="./paginas/cremascorporales.html" >Cremas corporales</a></li>
-                            <li><a href="./paginas/cremasfaciales.html" >Cremas faciales</a></li>
-                            <li><a href="./paginas/exfoliantes.html" >Exfoliantes</a></li>
-                            <li><a href="./paginas/limpieza.html" >Limpieza</a></li>
-                            <li><a href="./paginas/mascarasfaciales.html" >Máscaras faciales</a></li>
-                            <li><a href="./paginas/tonicos.html" >Tónicos</a></li>
-                        </ul> 
-                    </li>
-                    <li><a href="./tiposdepiel.html">Tipos de piel</a></li>
-                    <li><a href="./new.html">News</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <a href="#"><span class="iconify" data-icon="fa-solid:bars" id="menu-btn"></span></a>
-                <a href="./user.html"><span class="iconify" data-icon="bx:bx-user"></span></a>
-                <a href="#"><span class="iconify" data-icon="icon-park-outline:like"></span></a>
-                <a href="#"><span class="iconify" data-icon="clarity:shopping-bag-line"></span></a>
-            </div>
-        </header>
+    <header class="header flex ">
+        <a  class="logo" href="../index.html">Portsaid</a>
+        
+        <nav id="nav" >
+            <span  id="navClose" class="iconify nav_btn nav_btn-close" data-icon="bi:x-lg"></span>
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/productos.html">Productos </a>
+                        </li>
+                        <li><a href="../pages/tiposdepiel.html">Tipos de piel</a>
+                        </li>
+                        <li ><a href="../pages/new.html">New</a>
+                        </li>
+                        <li><a href="../pages/contacto.html"> Contacto</a>
+                        </li>
+                    </ul>
+        </nav>
+        <div class=" icons">
+            <a href="../pages/user.html"><span class=" icon iconify" data-icon="bx:bx-user"></span></a>
+            <a href="#"><span class=" icon iconify" data-icon="clarity:shopping-bag-line"></span></a>
+            <span  id="navOpen" class="iconify nav_btn nav_btn-open" data-icon="codicon:three-bars"></span>
+        </div>
+    </header>
     <main>
         <section class="formRegister">
             <form  class="login"  action="" method="post" enctype="text/plain" >
@@ -56,22 +55,75 @@
             </form>
         </section>
     </main>
+    <footer class="footer__container">
+        <div class=" footer-grid">
+            <div class="footer_logo flex">
+                <a class="flex logo" href="../index.html" class="footer__logo">Portsaid</a>
+            </div>
 
-    <footer class="footer">
-        <a class="logo logo-footer" href="index.html">ssofia</a> 
-            <ul class="listas">
-                <li><a href="#">Politica de privacidad</a></li>
-                <li><a href="#">Servicio al cliente</a></li>
-                <li><a href="#">Ubicacion</a></li>
-                <li><a href="#">Empleo</a></li>
-            </ul>
-        <ul class=" listas">
-            <li><a href="https://www.instagram.com/"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
-            <li><a href="https://twitter.com/?lang=es="><span class="iconify" data-icon="akar-icons:twitter-fill"></span></a></li>
-            <li><a href="https://es-la.facebook.com/"><span class="iconify" data-icon="akar-icons:facebook-fill"></span></a></li>
-            <li><a href="https://es-la.facebook.com/"><span class="iconify" data-icon="akar-icons:pinterest-fill"></span></a></li>
-        </ul>
-        <script src="scripts.js"></script> 
-    </footer>
+            <div class="footer__content content informacion">
+                <h3 class="footer__title">Informacion</h3>
+
+                <ul class="footer__data flex">
+                    <li class="footer__information">Trabaja con nosotros</li>
+                    <li class="footer__information">Términos y Condiciones</li>
+                    <li class="footer__information">Informacion corporativa</li>
+                    <li class="footer__information">Servicio al Cliente</li>
+                    <li class="footer__information">Política de Privacidad</li>
+                
+                </ul>
+            </div>
+            
+            <div class="footer__content content shop">
+                <h3 class="footer__title">Informacion</h3>
+
+                <ul class="footer__shop flex">
+                    <li class="footer__information">Tonicos</li>
+                    <li class="footer__information">Mascarillas</li>
+                    <li class="footer__information">Exfoliantes</li>
+                    <li class="footer__information">Cremas Corporales</li>
+                    <li class="footer__information">Cremas Faciales</li>
+                
+                </ul>
+            </div>
+
+            <div class="footer__content content contacto">
+                <h3 class="footer__title">Contacto</h3>
+
+                <div class="footer__data flex">
+                    <li class="footer__information">1174985423</li>
+                    <li class="footer__information">43-738-374</li>
+                    <li class="footer__information">info@portsaid.com</li>
+                    <li class="footer__information">Direccion</li>
+                </div>
+            </div> 
+                
+            <div class="footer__content content redes ">
+
+                <ul class="footer__social flex ">
+                    <li><a href="https://es-la.facebook.com/" class="footer__social-link"><span class="iconify" data-icon="brandico:facebook"></span></a></li>
+                    <li><a href="https://www.instagram.com/" class="footer__social-link"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
+                    <li><a href="https://twitter.com/?lang=es" class="footer__social-link"><span class="iconify" data-icon="akar-icons:twitter-fill"></span></a></li>
+                </ul>
+            </div>
+            <div class="footer__subs letter flex ">
+                <h3 class="footer__title">Suscríbete a nuestro newsletter</h3>
+                <div class="footer__subs--email">
+                    <input type="email" placeholder="Ingresá tu email" class="footer__input">
+                    <button type="button"  class="footer__button">
+                    <span class="iconify" data-icon="ri:arrow-right-up-line"></span>
+                </div>
+            </button>
+             </div>
+        </div>
+        
+
+        <p class="footer__copy ">&#169; Fabiana Teran  Todos los derechos reservados</p>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../scrips/nav.js" ></script>
+    <script src="../scrips/carousel.js" ></script>
+    <script src="../scrips/headerandhero.js" ></script>
 </body>
 </html>

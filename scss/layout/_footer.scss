@@ -9,6 +9,12 @@
             justify-content: center;
             margin-bottom: 3rem;
         }
+        &__title{
+            font-size: 1.4rem;
+        }
+        &__information{
+            margin-top: 1.5em;
+        }
         &__data,
         &__shop{
         flex-direction: column;
