@@ -35,31 +35,40 @@
             </div>
         </div>
     </header>
-        <main>
-            <h1 class="titulo-principal"> Contáctanos</h1>
-            <section class="contact"> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2869479769943!2d-58.487936499999996!3d-34.5462894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c049b27a89%3A0xb4aff81f5c83b76b!2sDot%20Baires%20Shopping!5e0!3m2!1ses-419!2sar!4v1637099978494!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <form action="">
-                        <h3>Ingresa los datos y contanos tus dudas</h3>
-                        <p>tambien podes visitarnos!</p>
-                        <div class="contact__input">
-                            <span class="iconify" data-icon="ant-design:user-outlined"></span>
-                            <input type="text" placeholder="Nombre">
-                        </div>
-                        <div class="contact__input">
-                            <span class="iconify" data-icon="akar-icons:envelope"></span>
-                            <input type="email" placeholder="Mail">
-                        </div>
-                        <div class="contact__input">
-                            <span class="iconify" data-icon="clarity:mobile-phone-line"></span>
-                            <input type="number" placeholder="Numero">
-                        </div>
-                        <div class="contact__input">
-                            <span class="iconify" data-icon="iconoir:design-pencil"></span>
-                            <input type="text" name="comentarios" rows="10" cols="40">
-                        </div>
-                        <input type="submit" value="contactate ahora" class="btn">
-                    </form>
+        <main >
+            <section class="formulario">
+                <div class="historia">
+                    <div class="formulario__content content">
+                        <form  class="formulario__content--login "  action="" method="post" enctype="text/plain" >
+                            <h3 class="formulario__content--title">Ingresa los datos y  <br> contanos tus dudas</h3>
+
+                                        <label class="label-input" for="nombre">
+                                            <span class="iconify" data-icon="bx:bx-user"></span>
+                                            <input class="formulario__content--input" type="text" name="Nombre" placeholder="Nombre" required>
+                                        </label>
+                                        <label class="label-input" for="email">
+                                            <span class="iconify" data-icon="akar-icons:envelope"></span>
+                                            <input class="formulario__content--input" type="email" name="email" placeholder="Mail" required>
+                                        </label>
+                                        <label class="label-input">
+                                            <span class="iconify" data-icon="clarity:mobile-phone-line"></span>
+                                            <input class="formulario__content--input"  type="number" placeholder="Numero">
+                                        </label>
+                                        <label class="label-input" for="contraseña">
+                                            <span class="iconify-inline" data-icon="carbon:locked"></span>
+                                            <input class="formulario__content--input" type="password" name="contraseña" placeholder="Contraseña" required>
+                                        </label>
+                                        <label class="label-input">
+                                            <span class="iconify" data-icon="iconoir:design-pencil"></span>
+                                            <input class="formulario__content--input"  type="text" name="comentarios" rows="10" cols="40">
+                                        </label>
+                                        <input class="formulario__content--input" class="boton " type="submit" value="contactate ahora" >
+                        </form>
+                    </div>
+                    <div class="formulario__img flex">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2869479769943!2d-58.487936499999996!3d-34.5462894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c049b27a89%3A0xb4aff81f5c83b76b!2sDot%20Baires%20Shopping!5e0!3m2!1ses-419!2sar!4v1637099978494!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer__container">
