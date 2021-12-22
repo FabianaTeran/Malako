@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Merriweather:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Courgette&family=Lobster&display=swap");
 * {
   margin: 0;
@@ -9,7 +10,7 @@
   list-style: none;
   text-decoration: none !important;
   text-transform: none;
-  color: inherit !important;
+  color: inherit;
 }
 
 img,
@@ -53,47 +54,55 @@ main {
           align-items: center;
 }
 
+.container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .logo {
-  font-family: "Frank Ruhl Libre", serif;
-  letter-spacing: .3rem;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: bolder;
+  width: 10rem;
 }
 
 .abajo {
-  background: white;
-  color: black !important;
-}
-
-.abajo nav {
-  background: white;
-  color: black !important;
-}
-
-header {
-  height: 65px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1em;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
   background: black;
   color: white !important;
 }
 
+.abajo nav {
+  background: black;
+  color: white !important;
+}
+
+header {
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2em;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  color: black;
+  z-index: 2;
+}
+
+header .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 header .nav_btn {
-  width: 2em;
+  width: 1em;
+  margin-bottom: .3em;
   cursor: pointer;
 }
 
 header .nav_btn-close {
   float: right;
-  margin: 1em;
+  margin: 2em;
+  margin-right: 3rem;
+  width: 1.5rem;
 }
 
 header nav {
@@ -102,8 +111,8 @@ header nav {
   right: 0;
   height: 100vh;
   width: 60%;
-  background: black;
-  color: white !important;
+  background: white;
+  color: black !important;
   z-index: 1;
   display: none;
 }
@@ -113,20 +122,15 @@ header nav.nav-open {
 }
 
 header nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
   gap: 2em;
   margin-top: 50%;
-  margin-left: 15%;
 }
 
 header nav .menu li {
-  font-size: 1em;
   opacity: 0.8;
   letter-spacing: 0.05em;
 }
@@ -134,13 +138,14 @@ header nav .menu li {
 header nav .menu li.active {
   font-weight: 600;
   opacity: 1;
+  color: #DEB887 !important;
 }
 
-header nav .menu li:hover a {
-  color: #ffc0f5 !important;
-  border: 1px solid #ffc0f5;
-  padding: .3em;
-  border-radius: 10px;
+header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
 header .icons .icon {
@@ -182,12 +187,7 @@ header .icons .icon:hover {
       grid-template-columns: repeat(1, 1fr);
 }
 
-.hero__img {
-  position: relative;
-}
-
 .hero__content {
-  padding: 1em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -195,6 +195,7 @@ header .icons .icon:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 2rem;
 }
 
 .hero__content--title {
@@ -207,18 +208,9 @@ header .icons .icon:hover {
   font-size: clamp(1rem, 3.5vw, 1.5rem);
 }
 
-.hero__img--bg {
-  background: black;
-  height: 100%;
-  width: 50%;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 @media (min-width: 750px) {
   .homepage {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
   .hero__container {
     -ms-grid-columns: (1fr)[2];
@@ -489,7 +481,7 @@ form {
 
 .footer-grid {
   padding: 2rem;
-  background-color: #f4eddd;
+  background-color: #D4B49D;
   display: -ms-grid;
   display: grid;
 }
@@ -517,7 +509,6 @@ form {
 }
 
 .footer-grid .footer__social {
-  font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,7 +523,7 @@ form {
 }
 
 .footer-grid .footer__social li:hover a {
-  color: cornflowerblue !important;
+  color: cornflowerblue;
 }
 
 .footer-grid .footer__subs {
@@ -545,7 +536,7 @@ form {
 .footer-grid .footer__subs--email {
   width: 22em;
   height: 70px;
-  background: white;
+  background: #FAEBD7;
   border-radius: 50px;
   position: relative;
 }
@@ -748,89 +739,68 @@ form {
 }
 
 .btn {
-  border: 2px solid #ffc0f5;
+  border: 2px solid #DEB887;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: black;
-  -webkit-box-shadow: 5px 5px black;
-          box-shadow: 5px 5px black;
+  -webkit-box-shadow: 5px 5px #8B4513;
+          box-shadow: 5px 5px #8B4513;
   font-size: clamp(0.5em, 3vw, 1rem);
+  padding: .5rem;
+  border-radius: 3px;
+  margin: 1rem;
 }
 
 .btn:hover {
-  background: #ffc0f5;
-  -webkit-box-shadow: 5px 5px #bdbdbd;
-          box-shadow: 5px 5px #bdbdbd;
+  background: #DEB887;
+  -webkit-box-shadow: 5px 5px #800000;
+          box-shadow: 5px 5px #800000;
 }
 
-.banner {
-  background-image: url("../imagenes/jacinta-christos-kSj37Re1VZQ-unsplash.jpg");
-  height: 30vh;
+.historia__header {
+  background: #D4B49D;
 }
 
-.banner p {
-  position: absolute;
-  color: black;
-  font-size: 3.4rem;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  margin: 2rem 5rem;
-  font-family: 'Frank Ruhl Libre', serif;
-}
-
-.cont-piel > div {
-  margin: 5rem;
-  font-size: 1.6rem;
-  border: 1px solid #eae2e2;
-  background-color: #fff;
+.historia__container {
+  background: #D4B49D;
+  margin-top: 3rem;
   padding: 2rem;
 }
 
-.acticulo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+.historia__container .historia__content--title {
+  font-family: 'Merriweather', serif;
+  font-size: clamp(1rem, 3.5vw, 2.5rem);
+  color: black;
+  padding: 2rem;
 }
 
-.titulo-descripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.historia__container .historia__content--parrafo {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.historia__container .historia__content--logo {
+  width: 20%;
+  margin: 2rem;
+}
+
+.historia__container .historia__img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.descripcion {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: -1;
-}
-
-.grid-sensible {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  padding: 4rem;
-  gap: 3rem;
-}
-
-.card-sensi {
-  background-color: #eee;
-  padding: 2rem;
-}
-
-.grid-reco {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (20rem)[3];
-      grid-template-columns: repeat(3, 20rem);
+@media (min-width: 750px) {
+  .historia__container .historia {
+    margin-top: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .historia__container .historia__img {
+    margin-left: 3rem;
+    margin-top: -3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

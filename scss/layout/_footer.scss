@@ -1,7 +1,7 @@
 
 .footer-grid{
     padding: 2rem;
-    background-color: #f4eddd;
+    background-color: #D4B49D;
     display: grid;
 
     .footer{
@@ -27,7 +27,7 @@
             justify-content: center;
             margin: 2rem;
             li:hover a{
-                color: cornflowerblue !important;
+                color: cornflowerblue;
             }
         }
         &__subs{
@@ -35,7 +35,7 @@
             &--email{
                 width: 22em;
                 height: 70px;
-                background: rgb(255, 255, 255);
+                background: #FAEBD7;
                 border-radius: 50px;
                 position: relative;
                 input{
